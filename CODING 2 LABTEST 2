@@ -1,0 +1,29 @@
+package mathcalc;
+import java.util.Scanner;
+/*surface area,base area, and volume of a cylinder*/
+public class CylinderComputation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    Scanner sc = new Scanner(System.in);
+          double radius,height,surfaceArea,baseArea,volume;
+          final double PI=3.14159265;
+          
+          System.out.println("Enter radius: ");
+          radius = sc.nextInt();
+          System.out.println("Enter height: ");
+          height = sc.nextInt();
+          
+          
+          surfaceArea=(2.0*PI*radius*height)+(2.0*PI*radius*radius);
+          baseArea=PI*radius*radius;
+          volume=PI*radius*radius*height;
+          
+          System.out.printf("%nBase Area of a cylinder: %.2f" , baseArea);
+          System.out.printf("%nSurface Area of a cylinder: %.2f" , surfaceArea);
+          System.out.printf("%nVolume of a cylinder: %.2f" , volume);
+    
+
+	}
+
+}
